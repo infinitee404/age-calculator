@@ -45,6 +45,23 @@
         return;
       }
 
+      // check max and min acceptable values for day and month
+      if(formData.month < 1 || formData.month > 12){
+        setIsInvalid(prevData => ({
+          ...prevData,
+          month: true,
+        }))
+        return;
+      }
+      
+      if((formData.day < 1 || formData.day > 31) || (formData.day > daysLength[formData.month-1])){
+        setIsInvalid(prevData => ({
+          ...prevData,
+          day: true,
+        }))
+        return;
+      }
+
       // get current date and extract year, month, and day
       const currentDate = new Date()
       const currentYear = currentDate.getUTCFullYear();

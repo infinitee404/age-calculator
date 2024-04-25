@@ -1,8 +1,24 @@
-# React + Vite
+# Age Calculator
+This age calculator is a simple React based application that calculates a person's age based on their input date of birth. Alternatively, it can be used to calculate the duration between present day and any other day in the past.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to setup
+- Git clone or Download project
+- npm install
+- npm run dev
+Navigate to http://localhost:5173 in your browser.
 
-Currently, two official plugins are available:
+## How to use
+Input your birthdate or any desired date into the respective input fields for day, month, and year.
+Submit by pressing the button.
+If the input date is a valid date then the duration in years, months, and days is displayed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dependencies
+- Node
+- React
+- Vite
+
+## Development Environment
+- Language: JavaScript
+- Framework React
+- Bundler: Vite
+- IDE: Visual Studio Code

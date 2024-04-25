@@ -40,7 +40,23 @@
     function handleSubmit(event){
 
       event.preventDefault();
-
+      
+      setIsInvalid(prevData => {
+        return {
+          day: false,
+          month: false,
+          year:false,
+        }
+      })
+      
+      setDisplayDate(prevData => {
+        return {
+          days: " - - ",
+          months: " - - ",
+          years:" - - ",
+        }
+      })
+      
       if ( !formData.year || !formData.month || !formData.day ){
         return;
       }
